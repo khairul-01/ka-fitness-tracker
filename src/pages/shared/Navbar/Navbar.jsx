@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
     const navigationLinks = <>
-    <li><NavLink to='/home'>Home</NavLink></li>
+    <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/gallery'>Gallery</NavLink></li>
     <li><NavLink to='/trainer'>Trainer</NavLink></li>
     <li><NavLink to='/classes'>Classes</NavLink></li>
@@ -11,7 +11,7 @@ const Navbar = () => {
     <li><NavLink to='/register'>Register</NavLink></li>
     </>
     return (
-        <div>
+        <div className="mb-1">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
+                    <Link to='/login' className="btn">Login</Link>
                 </div>
             </div>
         </div>
