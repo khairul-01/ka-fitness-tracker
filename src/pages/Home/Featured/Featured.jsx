@@ -7,7 +7,7 @@ const Featured = () => {
             <div className="grid grid-cols-3 gap-4">
                 <div className="card bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src="https://i.ibb.co/g6j2Wb4/64c4e2bf3957c9001d76bf8d.jpg" alt="Shoes" className="rounded-xl" />
+                        <img src="https://i.ibb.co/89nwzx4/images.jpg" alt="Shoes" className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Personalized Workouts!</h2>
