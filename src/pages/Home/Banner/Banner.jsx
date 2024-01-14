@@ -88,8 +88,7 @@ const Banner = () => {
                             <img src="https://i.ibb.co/F7zbHZq/flat-hand-drawn-dance-fitness-class-illustration-23-2148867249.jpg" />
                             <div>
                                 <h1 className="text-5xl font-bold">Dance Fit Fiesta!</h1>
-                                <p className="py-6"> Dance your way to fitness in our Dance Fit Fiesta classes. Groove to the beat, have fun, and burn calories with our energetic dance routines.
-Button: Explore Classes</p>
+                                <p className="py-6"> Dance your way to fitness in our Dance Fit Fiesta classes. Groove to the beat, have fun, and burn calories with our energetic dance routines.</p>
                                 <button className="btn btn-primary">Explore Classes</button>
                             </div>
                         </div>
