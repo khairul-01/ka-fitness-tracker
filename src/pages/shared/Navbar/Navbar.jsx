@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import fitnessLogo from '../../../assets/images/fitness-tracker-logo.png'
 
 
 const Navbar = () => {
@@ -24,7 +25,10 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">KA Fitness</a>
+                    <a className="btn btn-ghost text-xl">
+                        <img className="w-[50px] h-[50px]" src={fitnessLogo} alt="" />
+                        KA Fitness
+                    </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
