@@ -16,7 +16,7 @@ const Blog = () => {
                             <div className="flex gap-2 items-center"><FaRegUserCircle /> Emily Thompson</div>
                         </div>
                         <h2 className="card-title">Unlocking the Power of Mindful Movement</h2>
-                        <p>Dive into the transformative world of mindful movement with Emily Thompson's insightful blog. Learn how incorporating mindfulness into your workouts can enhance not only physical health but also mental well-being. Discover practical tips, personal ...</p>
+                        <p>Dive into the transformative world of mindful movement with Emily Thompsons insightful blog. Learn how incorporating mindfulness into your workouts can enhance not only physical health but also mental well-being. Discover practical tips, personal ...</p>
                         <div className="card-actions justify-end">
                         <button className="btn btn-outline btn-accent rounded-3xl">Read More</button>
                         </div>
@@ -79,8 +79,8 @@ const Blog = () => {
                             <div className="flex gap-2 items-center"> <FaCalendarAlt /> March 20, 2024</div>
                             <div className="flex gap-2 items-center"><FaRegUserCircle /> Alex Williams</div>
                         </div>
-                        <h2 className="card-title">From Couch to 5K: A Beginner's Fitness Journey</h2>
-                        <p>Join Alex Williams on his inspiring journey from couch potato to completing a 5K. This blog post details the challenges, triumphs, and lessons learned along the way. Perfect for beginners, Alex's story proves that anyone can embark on a fitness journey and ...</p>
+                        <h2 className="card-title">From Couch to 5K: A Beginners Fitness Journey</h2>
+                        <p>Join Alex Williams on his inspiring journey from couch potato to completing a 5K. This blog post details the challenges, triumphs, and lessons learned along the way. Perfect for beginners, Alexs story proves that anyone can embark on a fitness journey and ...</p>
                         <div className="card-actions justify-end">
                         <button className="btn btn-outline btn-accent rounded-3xl">Read More</button>
                         </div>
@@ -96,7 +96,7 @@ const Blog = () => {
                             <div className="flex gap-2 items-center"><FaRegUserCircle />  Yoga Instructor, Sophia Chang</div>
                         </div>
                         <h2 className="card-title">Stress-Busting Yoga Poses for a Calmer You</h2>
-                        <p>Unwind and find inner peace with Yoga Instructor Sophia Chang's guide to stress-busting yoga poses. Discover how specific poses and breathing techniques can help alleviate stress and promote relaxation. This blog is a must-read for those seeking a ...</p>
+                        <p>Unwind and find inner peace with Yoga Instructor Sophia Changs guide to stress-busting yoga poses. Discover how specific poses and breathing techniques can help alleviate stress and promote relaxation. This blog is a must-read for those seeking a ...</p>
                         <div className="card-actions justify-end">
                         <button className="btn btn-outline btn-accent rounded-3xl">Read More</button>
                         </div>
