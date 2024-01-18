@@ -4,9 +4,9 @@ const BeATrainer = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content ">
 
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card w-full shadow-2xl bg-base-100">
                         <h1 className="text-5xl font-bold py-6 px-6">Be a Trainer!</h1>
                         <form className="card-body">
                             <div className="form-control">
