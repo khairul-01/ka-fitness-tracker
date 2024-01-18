@@ -1,24 +1,15 @@
 import { BsLinkedin, BsPersonArmsUp } from "react-icons/bs";
-import { FcAbout } from "react-icons/fc";
-import { GiSkills } from "react-icons/gi";
-import { GrUserExpert } from "react-icons/gr";
 import { FaCalendarTimes, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaCheckToSlot } from "react-icons/fa6";
-import { IoShareSocial } from "react-icons/io5";
+import { IoRocket, IoShareSocial } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const Trainer = () => {
     return (
-        <div>
-           <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content text-center">
-                    <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Trainer Section</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
-                    </div>
-                </div>
-            </div> 
+        <div className="space-y-7">
+            <h1 className="text-5xl font-bold text-center pt-5">Our Trainers</h1>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="card bg-base-100 shadow-xl">
 
@@ -30,8 +21,12 @@ const Trainer = () => {
                         </div>
                         <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 8 years</div>
                         <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span> Monday to Friday - 6 AM to 12 PM</div>
-                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> Instagram <FaInstagram className="inline" /> | Twitter <FaTwitter className="inline" /> | LinkedIn <BsLinkedin className="inline" /></div>
 
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
                     </div>
                 </div>
                 <div className="card bg-base-100 shadow-xl">
@@ -42,10 +37,14 @@ const Trainer = () => {
                         <div className="flex items-center">
                             <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Dr. Mia Rodriguez</span>
                         </div>
-                        <div className=""><GiSkills className="inline" /> <span className="font-bold">Qualifications:</span> Doctorate in Nutrition, Certified Health Coach</div>
-                        <div className=""><GrUserExpert className="inline" /><span className="font-bold">Expertise:</span> Nutritional Science, Holistic Wellness</div>
+                        <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 12 years</div>
+                        <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span> Tuesday and Thursday - 4 PM to 8 PM, Saturday - 10 AM to 2 PM</div>
 
-                        <p ><FcAbout className="inline" /> <span className="font-bold">About: </span> Dr. Mia Rodriguez combines her academic background in nutritional science with a practical approach to promote holistic wellness. Her blog posts and personalized nutrition guidance aim to educate and empower individuals to make informed choices that support their fitness journey and overall well-being.</p>
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
 
                     </div>
                 </div>
@@ -57,10 +56,14 @@ const Trainer = () => {
                         <div className="flex items-center">
                             <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Mark Bennett</span>
                         </div>
-                        <div className=""><GiSkills className="inline" /> <span className="font-bold">Qualifications:</span> Certified Fitness Instructor, Total Body Bootcamp Specialist</div>
-                        <div className=""><GrUserExpert className="inline" /><span className="font-bold">Expertise:</span> Total Body Bootcamp, Strength Training</div>
+                        <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 10 years</div>
+                        <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span> Monday, Wednesday, and Friday - 5:30 AM to 9 AM, Saturday - 8 AM to 12 PM</div>
 
-                        <p ><FcAbout className="inline" /> <span className="font-bold">About: </span> Mark is a Total Body Bootcamp enthusiast with a passion for building strength and resilience. His training sessions are designed to challenge both the body and mind. Through his personal fitness journey, Mark inspires others to embrace the intensity of bootcamp workouts for transformative results.</p>
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
 
                     </div>
                 </div>
@@ -70,12 +73,16 @@ const Trainer = () => {
 
                     <div className="card-body">
                         <div className="flex items-center">
-                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Sophia Chang</span>
+                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Mark Bennett</span>
                         </div>
-                        <div className=""><GiSkills className="inline" /> <span className="font-bold">Qualifications:</span> Certified Yoga Instructor, Mindfulness Practitioner</div>
-                        <div className=""><GrUserExpert className="inline" /><span className="font-bold">Expertise:</span> Yoga, Stress Reduction Techniques</div>
+                        <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 6 years</div>
+                        <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span> Monday and Wednesday - 7 AM to 11 AM, Friday - 4 PM to 8 PM</div>
 
-                        <p ><FcAbout className="inline" /> <span className="font-bold">About: </span> Sophia Chang brings a calm and mindful approach to fitness through her expertise in yoga. As a certified yoga instructor and mindfulness practitioner, she guides users in finding balance, reducing stress, and enhancing overall well-being. Join Sophia on a journey of self-discovery through the practice of yoga.</p>
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
 
                     </div>
                 </div>
@@ -85,12 +92,16 @@ const Trainer = () => {
 
                     <div className="card-body">
                         <div className="flex items-center">
-                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Alex Williams</span>
+                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Mark Bennett</span>
                         </div>
-                        <div className=""><GiSkills className="inline" /> <span className="font-bold">Qualifications:</span> Certified Personal Trainer, Fitness Blogger</div>
-                        <div className=""><GrUserExpert className="inline" /><span className="font-bold">Expertise:</span> Beginner Fitness, Motivation</div>
+                        <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 5 years</div>
+                        <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span> Tuesday and Thursday - 5 PM to 9 PM, Saturday - 9 AM to 1 PM</div>
 
-                        <p ><FcAbout className="inline" /> <span className="font-bold">About: </span> Alex Williams understands the challenges of starting a fitness journey. As a certified personal trainer and fitness blogger, he specializes in creating beginner-friendly workouts and provides motivational insights. Follow Alex for practical tips and inspiration to kickstart your fitness routine.</p>
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
 
                     </div>
                 </div>
@@ -100,16 +111,32 @@ const Trainer = () => {
 
                     <div className="card-body">
                         <div className="flex items-center">
-                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Emily Thompson</span>
+                            <BsPersonArmsUp className='inline' /><span className="text-2xl"><span className="font-bold">Name: </span>Mark Bennett</span>
                         </div>
-                        <div className=""><GiSkills className="inline" /> <span className="font-bold">Qualifications:</span> Certified Mindfulness Coach, Fitness Enthusiast</div>
-                        <div className=""><GrUserExpert className="inline" /><span className="font-bold">Expertise:</span> Mindful Movement, Mental Wellness</div>
+                        <div className=""><FaCalendarTimes className="inline" /> <span className="font-bold">Years of Experience:</span> 7 years</div>
+                        <div className=""><FaCheckToSlot className="inline" /> <span className="font-bold">Available Time Slots:</span>  Wednesday and Friday - 8 AM to 12 PM, Sunday - 3 PM to 7 PM</div>
 
-                        <p ><FcAbout className="inline" /> <span className="font-bold">About: </span> Emily Thompson is dedicated to the transformative power of mindful movement. As a certified mindfulness coach, she guides users in integrating mindfulness into their workouts for improved mental well-being. Join Emily for a holistic approach to fitness that nourishes both the body and the mind.</p>
+                        <div className=""><IoShareSocial className="inline" /> <span className="font-bold">Social Links:</span> <span className="btn btn-sm">Instagram <FaInstagram className="inline" /></span> | <span className="btn btn-sm">Twitter <FaTwitter className="inline" /></span> | <span className="btn btn-sm">LinkedIn <BsLinkedin className="inline" /></span></div>
+
+                        <div className="card-actions justify-center">
+                            <button className="btn btn-primary">Know more ...</button>
+                        </div>
 
                     </div>
                 </div>
-                
+
+            </div>
+
+            <div className="rounded-lg h-[400px] bg-violet-700 text-white flex flex-col items-center justify-center gap-7">
+                <h1 className="text-6xl font-bold">Be a Trainer</h1>
+                <div className="flex w-2/3 justify-center items-center">
+
+                    <Link to='/BeATrainer'>
+                        <button className="flex btn ">
+                            Become a Trainer
+                            <IoRocket />
+                        </button></Link>
+                </div>
             </div>
         </div>
     );

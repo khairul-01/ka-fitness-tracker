@@ -1,0 +1,81 @@
+[
+    {
+      "trainer": "Jessica Hernandez",
+      "qualifications": "Certified Personal Trainer (CPT), Nutrition Specialist",
+      "expertise": "High-Intensity Interval Training (HIIT), Nutrition Coaching",
+      "yearsOfExperience": 8,
+      "availableTimeSlots": "Monday to Friday - 6 AM to 12 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/jessfit/",
+        "twitter": "https://twitter.com/JessFitTrainer",
+        "linkedin": "https://www.linkedin.com/in/jessica-hernandez-fitness/"
+      },
+      "about": "Jessica is passionate about helping individuals achieve their fitness goals through dynamic and effective workouts. With a focus on HIIT, she believes in the power of short, intense bursts of exercise to maximize results. Her nutrition expertise complements her training programs, ensuring a holistic approach to health and wellness."
+    },
+    {
+      "trainer": "Dr. Mia Rodriguez",
+      "qualifications": "Doctorate in Nutrition, Certified Health Coach",
+      "expertise": "Nutritional Science, Holistic Wellness",
+      "yearsOfExperience": 12,
+      "availableTimeSlots": "Tuesday and Thursday - 4 PM to 8 PM, Saturday - 10 AM to 2 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/drmianutrition/",
+        "facebook": "https://www.facebook.com/DrMiaWellness",
+        "linkedin": "https://www.linkedin.com/in/dr-mia-rodriguez/"
+      },
+      "about": "Dr. Mia Rodriguez combines her academic background in nutritional science with a practical approach to promote holistic wellness. Her blog posts and personalized nutrition guidance aim to educate and empower individuals to make informed choices that support their fitness journey and overall well-being."
+    },
+    {
+      "trainer": "Mark Bennett",
+      "qualifications": "Certified Fitness Instructor, Total Body Bootcamp Specialist",
+      "expertise": "Total Body Bootcamp, Strength Training",
+      "yearsOfExperience": 10,
+      "availableTimeSlots": "Monday, Wednesday, and Friday - 5:30 AM to 9 AM, Saturday - 8 AM to 12 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/markbennettfitness/",
+        "twitter": "https://twitter.com/MarkBFit",
+        "linkedin": "https://www.linkedin.com/in/mark-bennett-fitness/"
+      },
+      "about": "Mark is a Total Body Bootcamp enthusiast with a passion for building strength and resilience. His training sessions are designed to challenge both the body and mind. Through his personal fitness journey, Mark inspires others to embrace the intensity of bootcamp workouts for transformative results."
+    },
+    {
+      "trainer": "Sophia Chang",
+      "qualifications": "Certified Yoga Instructor, Mindfulness Practitioner",
+      "expertise": "Yoga, Stress Reduction Techniques",
+      "yearsOfExperience": 6,
+      "availableTimeSlots": "Monday and Wednesday - 7 AM to 11 AM, Friday - 4 PM to 8 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/sophiayoga/",
+        "facebook": "https://www.facebook.com/SophiaYogaJourney/",
+        "linkedin": "https://www.linkedin.com/in/sophia-chang-yoga/"
+      },
+      "about": "Sophia Chang brings a calm and mindful approach to fitness through her expertise in yoga. As a certified yoga instructor and mindfulness practitioner, she guides users in finding balance, reducing stress, and enhancing overall well-being. Join Sophia on a journey of self-discovery through the practice of yoga."
+    },
+    {
+      "trainer": "Alex Williams",
+      "qualifications": "Certified Personal Trainer, Fitness Blogger",
+      "expertise": "Beginner Fitness, Motivation",
+      "yearsOfExperience": 5,
+      "availableTimeSlots": "Tuesday and Thursday - 5 PM to 9 PM, Saturday - 9 AM to 1 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/alexwillfit/",
+        "twitter": "https://twitter.com/AlexFitTrainer",
+        "linkedin": "https://www.linkedin.com/in/alex-williams-fitness/"
+      },
+      "about": "Alex Williams understands the challenges of starting a fitness journey. As a certified personal trainer and fitness blogger, he specializes in creating beginner-friendly workouts and provides motivational insights. Follow Alex for practical tips and inspiration to kickstart your fitness routine."
+    },
+    {
+      "trainer": "Emily Thompson",
+      "qualifications": "Certified Mindfulness Coach, Fitness Enthusiast",
+      "expertise": "Mindful Movement, Mental Wellness",
+      "yearsOfExperience": 7,
+      "availableTimeSlots": "Wednesday and Friday - 8 AM to 12 PM, Sunday - 3 PM to 7 PM",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com/emilyfitmind/",
+        "facebook": "https://www.facebook.com/EmilyMindfulFitness/",
+        "linkedin": "https://www.linkedin.com/in/emily-thompson-fitness/"
+      },
+      "about": "Emily Thompson is dedicated to the transformative power of mindful movement. As a certified mindfulness coach, she guides users in integrating mindfulness into their workouts for improved mental well-being. Join Emily for a holistic approach to fitness that nourishes both the body and the mind."
+    }
+]
+  
