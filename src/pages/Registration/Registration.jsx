@@ -77,8 +77,13 @@ const Registration = () => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" {...register("email", { required: true })} placeholder="email" name="email" className="input input-bordered" />
-                                {errors.email && <span className="text-red-600">Email field is required</span>}
+                                <input type="email" {...register("email", {
+                                    required: true,
+                                    pattern: /^\S+@\S+\.\S+$/,
+                                })}
+                                    placeholder="Enter your email" name="email" className="input input-bordered" />
+                                {errors.email?.type === 'required' && <span className="text-red-600">Email field is required</span>}
+                                {errors.email?.type === 'pattern' && <span className="text-red-600">Please insert valid email.</span>}
                             </div>
                             <div className="form-control">
                                 <label className="label">

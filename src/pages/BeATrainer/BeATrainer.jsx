@@ -38,8 +38,14 @@ const BeATrainer = () => {
                                     <span className="label-text">Skills</span>
                                 </label>
 
-                                <p><input type="checkbox"  className="checkbox checkbox-success" />
-                                <span className="label-text">Remember me</span></p>
+                                <p><input type="checkbox" className="checkbox checkbox-success" />
+                                    <span className="label-text">Remember me</span></p>
+
+                                <select>
+                                    <option value="female">female</option>
+                                    <option value="male">male</option>
+                                    <option value="other">other</option>
+                                </select>
 
                             </div>
                             <div className="form-control">
