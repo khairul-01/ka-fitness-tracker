@@ -5,12 +5,12 @@ import useAxiosPublic from './../hooks/useAxiosPublic';
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
-const axiosPublic = useAxiosPublic();
 
 const AuthProvider = ({children}) => {
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
     const googleProvider = new GoogleAuthProvider();
+    const axiosPublic = useAxiosPublic();
 
     const signUp = (email, password) => {
         setLoading(true);
@@ -66,7 +66,7 @@ const AuthProvider = ({children}) => {
         return () => {
             return unSubscribe();
         }
-    },[])
+    },[axiosPublic])
 
     const authValue = {
         signUp,

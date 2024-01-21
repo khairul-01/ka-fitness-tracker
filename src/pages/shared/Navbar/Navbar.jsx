@@ -1,15 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import fitnessLogo from '../../../assets/images/fitness-tracker-logo.png'
+import useAuth from "../../../hooks/useAuth";
 
 
 const Navbar = () => {
+    const { user } = useAuth();
+    console.log(user);
     const navigationLinks = <>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/gallery'>Gallery</NavLink></li>
-    <li><NavLink to='/trainer'>Trainer</NavLink></li>
-    <li><NavLink to='/classes'>Classes</NavLink></li>
-    <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
-    <li><NavLink to='/register'>Register</NavLink></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/gallery'>Gallery</NavLink></li>
+        <li><NavLink to='/trainer'>Trainer</NavLink></li>
+        <li><NavLink to='/classes'>Classes</NavLink></li>
+        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+        <li><NavLink to='/register'>Register</NavLink></li>
     </>
     return (
         <div className="mb-1">
@@ -38,7 +41,19 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login' className="btn">Login</Link>
+                    {
+                        user ? <>
+                            <button className="btn">Log Out</button>
+                            <div className="avatar online">
+                                <div className="w-10 rounded-full">
+                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                </div>
+                            </div>
+                        </>
+                            :
+                            <Link to='/login' className="btn">Login</Link>
+                    }
+
                 </div>
             </div>
         </div>
