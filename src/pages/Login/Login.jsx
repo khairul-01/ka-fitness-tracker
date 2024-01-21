@@ -1,9 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login_img from '../../assets/images/login-img.avif'
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
+import useAuth from './../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const Login = () => {
+    const {logIn} = useAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const fromWhere = location.state?.from?.pathname || '/';
+    console.log('State in the location page ', location.state);
     const {
         register,
         handleSubmit,
@@ -11,6 +18,28 @@ const Login = () => {
     } = useForm();
     const onSubmit = (data) => {
         console.log(data)
+        logIn(data.email, data.password)
+        .then(result => {
+            console.log(result.user);
+            Swal.fire({
+                title: "User Logged in successfully",
+                showClass: {
+                  popup: `
+                    animate__animated
+                    animate__fadeInUp
+                    animate__faster
+                  `
+                },
+                hideClass: {
+                  popup: `
+                    animate__animated
+                    animate__fadeOutDown
+                    animate__faster
+                  `
+                }
+              });
+              navigate(fromWhere, {replace: true});
+        })
     }
     return (
         <div>

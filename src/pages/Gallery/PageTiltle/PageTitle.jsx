@@ -1,6 +1,7 @@
 
 
 const PageTitle = () => {
+    
     return (
         <div>
             <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/Bjvp2xD/7821-jpg-wh1200.jpg)'}}>
