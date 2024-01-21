@@ -9,6 +9,7 @@ import Classes from "../pages/Classes/Classes";
 import Dashboard from "../Layout/Dashboard";
 import Registration from "../pages/Registration/Registration";
 import Login from "../pages/Login/Login";
+import TrainerDetails from "../pages/Trainer/TrainerDetails";
 
 
 
@@ -29,6 +30,11 @@ export const router = createBrowserRouter([
           {
             path: "/trainer",
             element: <Trainer></Trainer>,
+          },
+          {
+            path: "/trainerDetails/:id",
+            element: <TrainerDetails></TrainerDetails>,
+            loader: ({params}) => fetch(`http://localhost:5000/trainers/${params.id}`)
           },
           {
             path: "/beAtrainer",

@@ -1,6 +1,7 @@
 [
     {
       "trainer": "Jessica Hernandez",
+      "image": "https://i.ibb.co/y8RzC64/images.jpg",
       "qualifications": "Certified Personal Trainer (CPT), Nutrition Specialist",
       "expertise": "High-Intensity Interval Training (HIIT), Nutrition Coaching",
       "yearsOfExperience": 8,
@@ -14,6 +15,7 @@
     },
     {
       "trainer": "Dr. Mia Rodriguez",
+      "image": "https://i.ibb.co/yYsKmyn/Focus-Awards-Personal-Trainer-Qualifications.jpg",
       "qualifications": "Doctorate in Nutrition, Certified Health Coach",
       "expertise": "Nutritional Science, Holistic Wellness",
       "yearsOfExperience": 12,
@@ -27,6 +29,7 @@
     },
     {
       "trainer": "Mark Bennett",
+      "image": "https://i.ibb.co/Br40yQT/571c53-0fe791f28f164d609b57d422ec3b678d-mv2.jpg",
       "qualifications": "Certified Fitness Instructor, Total Body Bootcamp Specialist",
       "expertise": "Total Body Bootcamp, Strength Training",
       "yearsOfExperience": 10,
@@ -40,6 +43,7 @@
     },
     {
       "trainer": "Sophia Chang",
+      "image": "https://i.ibb.co/4pVkpJy/stock-photo-portrait-of-a-female-personal-trainer-holding-tablet-and-smiling-at-the-camera-in-a-gym.jpg",
       "qualifications": "Certified Yoga Instructor, Mindfulness Practitioner",
       "expertise": "Yoga, Stress Reduction Techniques",
       "yearsOfExperience": 6,
@@ -53,6 +57,7 @@
     },
     {
       "trainer": "Alex Williams",
+      "image": "https://i.ibb.co/8MQqPnC/istockphoto-675179390-612x612.jpg",
       "qualifications": "Certified Personal Trainer, Fitness Blogger",
       "expertise": "Beginner Fitness, Motivation",
       "yearsOfExperience": 5,
@@ -66,6 +71,7 @@
     },
     {
       "trainer": "Emily Thompson",
+      "image": "https://i.ibb.co/PQT0kwS/200613-air-force-emily-thompson1.webp",
       "qualifications": "Certified Mindfulness Coach, Fitness Enthusiast",
       "expertise": "Mindful Movement, Mental Wellness",
       "yearsOfExperience": 7,

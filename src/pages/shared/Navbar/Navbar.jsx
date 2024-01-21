@@ -1,10 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import fitnessLogo from '../../../assets/images/fitness-tracker-logo.png'
 import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 
 const Navbar = () => {
-    const { user } = useAuth();
+    const { user, logOut } = useAuth();
     console.log(user);
     const navigationLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -12,8 +13,23 @@ const Navbar = () => {
         <li><NavLink to='/trainer'>Trainer</NavLink></li>
         <li><NavLink to='/classes'>Classes</NavLink></li>
         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+        <li><NavLink to='/community'>Community</NavLink></li>
         <li><NavLink to='/register'>Register</NavLink></li>
     </>
+    const handleLogout = () => {
+        logOut()
+        .then(()=>{
+            console.log("Successfully Logged out");
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "You Logged out Successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        })
+        .catch(error => console.error(error))
+    }
     return (
         <div className="mb-1">
             <div className="navbar bg-base-100">
@@ -43,7 +59,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {
                         user ? <>
-                            <button className="btn">Log Out</button>
+                            <button onClick={handleLogout} className="btn">Log Out</button>
                             <div className="avatar online">
                                 <div className="w-10 rounded-full">
                                     <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
