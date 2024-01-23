@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "name": "Fitness Achievement",
+      "date": "2024-01-15",
+      "posterName": "FitExplorer123",
+      "content": "Just finished an amazing workout session! 💪 #FeelingEnergized",
+      "votes": 8
+    },
+    {
+      "id": 2,
+      "name": "Nutrition Advice",
+      "date": "2024-01-14",
+      "posterName": "HealthyEater22",
+      "content": "Looking for advice on the best pre-workout meals. Any suggestions?",
+      "votes": 15
+    },
+    {
+      "id": 3,
+      "name": "Fitness Journey Update",
+      "date": "2024-01-13",
+      "posterName": "JourneyToFit",
+      "content": "Excited to share my fitness journey. Started from scratch, and now seeing progress!",
+      "votes": 23
+    },
+    {
+      "id": 4,
+      "name": "Music for Workouts",
+      "date": "2024-01-12",
+      "posterName": "GroovyLifter",
+      "content": "Favorite workout playlist? Need some music inspiration for my next gym session.",
+      "votes": 12
+    },
+    {
+      "id": 5,
+      "name": "Winter Motivation",
+      "date": "2024-01-11",
+      "posterName": "WinterWarrior",
+      "content": "Tips for staying motivated during the winter months? It's getting cold out there!",
+      "votes": 6
+    },
+    {
+      "id": 6,
+      "name": "Running Achievement",
+      "date": "2024-01-10",
+      "posterName": "RunForJoy",
+      "content": "Completed my first 5K run today! 🏃‍♂️ #AchievementUnlocked",
+      "votes": 30
+    },
+    {
+      "id": 7,
+      "name": "Flexibility Goals",
+      "date": "2024-01-09",
+      "posterName": "FlexMaster",
+      "content": "Best practices for improving flexibility? Share your stretching routines!",
+      "votes": 18
+    },
+    {
+      "id": 8,
+      "name": "Fitness App Recommendations",
+      "date": "2024-01-08",
+      "posterName": "AppExplorer",
+      "content": "Trying out a new workout app. Any recommendations for fitness apps?",
+      "votes": 10
+    },
+    {
+      "id": 9,
+      "name": "Intense Leg Day",
+      "date": "2024-01-07",
+      "posterName": "LegDayWarrior",
+      "content": "Leg day was intense! 😅 #SoreButStrong",
+      "votes": 25
+    },
+    {
+      "id": 10,
+      "name": "Weightlifting for Beginners",
+      "date": "2024-01-06",
+      "posterName": "LiftBeginner",
+      "content": "New to weightlifting. What are some essential exercises for beginners?",
+      "votes": 14
+    },
+    {
+      "id": 11,
+      "name": "Post-Workout Meals",
+      "date": "2024-01-05",
+      "posterName": "FoodieFit",
+      "content": "Favorite post-workout meal ideas? Share your go-to recipes!",
+      "votes": 20
+    },
+    {
+      "id": 12,
+      "name": "Fitness Class Fun",
+      "date": "2024-01-04",
+      "posterName": "ClassCompanion",
+      "content": "Joined a fitness class today. Met some amazing workout buddies! 👯‍♀️ #TeamFitness",
+      "votes": 28
+    }
+  ]
+  

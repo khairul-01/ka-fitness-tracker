@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
+import useAuth from './../../hooks/useAuth';
 
 
 const BeATrainer = () => {
+    const { user } = useAuth();
     const {
         register,
         handleSubmit,
@@ -38,7 +40,7 @@ const BeATrainer = () => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" defaultValue={user?.email} placeholder="email" className="input input-bordered" readOnly required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
