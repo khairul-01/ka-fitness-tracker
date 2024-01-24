@@ -1,0 +1,66 @@
+[
+    {
+      "class_name": "Cardio Blast",
+      "description": "Elevate your heart rate and burn calories with our high-energy cardio workouts. Join us for an exhilarating session that will leave you feeling energized and revitalized.",
+      "facilities": ["State-of-the-art cardio equipment", "Spacious workout area", "Certified fitness trainers"],
+      "image": "https://i.ibb.co/Y4sHWRj/gogoodguru-com-workout-post-header-cardio-blast.jpg",
+      "package_name": "Silver"
+    },
+    {
+      "class_name": "Strength Fusion",
+      "description": "Build strength and tone muscles with our dynamic strength fusion classes. Our expert instructors will guide you through a variety of exercises designed to sculpt and define your body.",
+      "facilities": ["Modern strength training equipment", "Personalized workout plans", "Hydration station"],
+      "image": "https://i.ibb.co/Hqn2Qzy/Flow-Chi-Fusion-Untitled-Page-1-1024x374.png",
+      "package_name": "Gold"
+    },
+    {
+      "class_name": "Yoga Harmony",
+      "description": "Discover inner peace and flexibility with our Yoga Harmony classes. Immerse yourself in a tranquil environment as you practice yoga poses and breathing exercises for a mind-body balance.",
+      "facilities": ["Dedicated yoga studio", "Mats and props provided", "Relaxing ambiance"],
+      "image": "https://i.ibb.co/jbBPfJz/informative-banner-energy-harmony-yoga-flat-82574-11632.jpg",
+      "package_name": "Silver"
+    },
+    {
+      "class_name": "HIIT Revolution",
+      "description": "Experience the HIIT revolution! High-Intensity Interval Training that delivers maximum results in a short amount of time. Get ready to push your limits and achieve your fitness goals.",
+      "facilities": ["HIIT circuit training", "Interval timers", "Motivational coaches"],
+      "image": "https://i.ibb.co/wSSfr9D/featured-image-workout-772x516.png",
+      "package_name": "Gold"
+    },
+    {
+      "class_name": "Pilates Sculpt",
+      "description": "Strengthen your core and improve flexibility with our Pilates Sculpt classes. This low-impact workout focuses on controlled movements for a toned and sculpted physique.",
+      "facilities": ["Pilates reformer machines", "Small class sizes for personalized attention", "Post-workout stretching area"],
+      "image": "https://i.ibb.co/t49W7JR/assets-tmp-catalogue-banner-1480-840-px-69-1703284396.png",
+      "package_name": "Diamond"
+    },
+    {
+      "class_name": "Spin & Sweat",
+      "description": "Pedal your way to fitness with our Spin & Sweat classes. Join our cycling community for a fun and challenging ride that will enhance your cardiovascular endurance and leg strength.",
+      "facilities": ["Top-of-the-line spin bikes", "Immersive sound system", "Towel service"],
+      "image": "https://i.ibb.co/PDxzSHd/e2552b9195b4eb1c858539d75d81eb04.jpg",
+      "package_name": "Gold"
+    },
+    {
+      "class_name": "Mindful Meditation",
+      "description": "Find tranquility and reduce stress with our Mindful Meditation classes. Learn various meditation techniques to calm the mind, improve focus, and promote overall well-being.",
+      "facilities": ["Quiet meditation room", "Guided meditation sessions", "Comfortable meditation cushions"],
+      "image": "https://i.ibb.co/PDxzSHd/e2552b9195b4eb1c858539d75d81eb04.jpg",
+      "package_name": "Silver"
+    },
+    {
+      "class_name": "Zumba Fusion",
+      "description": "Dance your way to fitness with our Zumba Fusion classes. Enjoy the rhythm of lively music while burning calories and having a blast. Join the party and get moving!",
+      "facilities": ["Spacious dance floor", "Certified Zumba instructors", "Fun and vibrant atmosphere"],
+      "image": "https://i.ibb.co/Hqn2Qzy/Flow-Chi-Fusion-Untitled-Page-1-1024x374.png",
+      "package_name": "Diamond"
+    },
+    {
+      "class_name": "Bootcamp Challenge",
+      "description": "Take on the Bootcamp Challenge! A total-body workout that combines strength training and cardio. Get ready to sweat, push your limits, and achieve real fitness results.",
+      "facilities": ["Outdoor bootcamp area", "Obstacle courses", "Team-building exercises"],
+      "image": "https://i.ibb.co/C05gCrs/small-total-body-bootcamp-cover.jpg",
+      "package_name": "Gold"
+    }
+  ]
+  

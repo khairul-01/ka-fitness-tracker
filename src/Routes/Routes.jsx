@@ -22,6 +22,7 @@ import ActivityLog from "../pages/Dashboard/MemberHome/ActivityLog/ActivityLog";
 import ProfileSettings from "../pages/Dashboard/MemberHome/ProfileSetting/ProfileSettings";
 import RecommendedClasses from "../pages/Dashboard/MemberHome/RecommendedClasses/RecommendedClasses";
 import Forum from "../pages/Forum/Forum";
+import TrainerBooked from "../pages/TrainerBooked/TrainerBooked";
 
 
 
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
       {
         path: "/beAtrainer",
         element: <BeATrainer></BeATrainer>,
+      },
+      {
+        path: "/trainerBooked",
+        element: <TrainerBooked></TrainerBooked>,
       },
       {
         path: "/classes",

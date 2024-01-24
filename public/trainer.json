@@ -6,6 +6,8 @@
       "expertise": "High-Intensity Interval Training (HIIT), Nutrition Coaching",
       "yearsOfExperience": 8,
       "availableTimeSlots": "Monday to Friday - 6 AM to 12 PM",
+      "availableTimeDay": 6,
+      "availableTimeWeek": 6,
       "socialLinks": {
         "instagram": "https://www.instagram.com/jessfit/",
         "twitter": "https://twitter.com/JessFitTrainer",
@@ -20,6 +22,8 @@
       "expertise": "Nutritional Science, Holistic Wellness",
       "yearsOfExperience": 12,
       "availableTimeSlots": "Tuesday and Thursday - 4 PM to 8 PM, Saturday - 10 AM to 2 PM",
+      "availableTimeDay": 4,
+      "availableTimeWeek": 3,
       "socialLinks": {
         "instagram": "https://www.instagram.com/drmianutrition/",
         "facebook": "https://www.facebook.com/DrMiaWellness",
@@ -34,6 +38,8 @@
       "expertise": "Total Body Bootcamp, Strength Training",
       "yearsOfExperience": 10,
       "availableTimeSlots": "Monday, Wednesday, and Friday - 5:30 AM to 9 AM, Saturday - 8 AM to 12 PM",
+      "availableTimeDay": 4,
+      "availableTimeWeek": 4,
       "socialLinks": {
         "instagram": "https://www.instagram.com/markbennettfitness/",
         "twitter": "https://twitter.com/MarkBFit",
@@ -48,6 +54,8 @@
       "expertise": "Yoga, Stress Reduction Techniques",
       "yearsOfExperience": 6,
       "availableTimeSlots": "Monday and Wednesday - 7 AM to 11 AM, Friday - 4 PM to 8 PM",
+      "availableTimeDay": 4,
+      "availableTimeWeek": 3,
       "socialLinks": {
         "instagram": "https://www.instagram.com/sophiayoga/",
         "facebook": "https://www.facebook.com/SophiaYogaJourney/",
@@ -62,6 +70,8 @@
       "expertise": "Beginner Fitness, Motivation",
       "yearsOfExperience": 5,
       "availableTimeSlots": "Tuesday and Thursday - 5 PM to 9 PM, Saturday - 9 AM to 1 PM",
+      "availableTimeDay": 4,
+      "availableTimeWeek": 3,
       "socialLinks": {
         "instagram": "https://www.instagram.com/alexwillfit/",
         "twitter": "https://twitter.com/AlexFitTrainer",
@@ -76,6 +86,8 @@
       "expertise": "Mindful Movement, Mental Wellness",
       "yearsOfExperience": 7,
       "availableTimeSlots": "Wednesday and Friday - 8 AM to 12 PM, Sunday - 3 PM to 7 PM",
+      "availableTimeDay": 5,
+      "availableTimeWeek": 4,
       "socialLinks": {
         "instagram": "https://www.instagram.com/emilyfitmind/",
         "facebook": "https://www.facebook.com/EmilyMindfulFitness/",

@@ -51,7 +51,7 @@ const Gallery = () => {
 
 
     return (
-        <div>
+        <div className=" bg-fixed" style={{backgroundImage: 'url(https://i.ibb.co/Bjvp2xD/7821-jpg-wh1200.jpg)'}}>
             <PageTitle></PageTitle>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-11">
                 {images.map((image) => (

@@ -20,26 +20,27 @@ const SocialLogin = () => {
             .then(res => {
                 if(res.data.insertedId){
                     console.log("Data added to the database successfully");
-                    Swal.fire({
-                        title: "Google Logged in successfull",
-                        showClass: {
-                          popup: `
-                            animate__animated
-                            animate__fadeInUp
-                            animate__faster
-                          `
-                        },
-                        hideClass: {
-                          popup: `
-                            animate__animated
-                            animate__fadeOutDown
-                            animate__faster
-                          `
-                        }
-                      });
-                      navigate("/");
+                    
                 }
             })
+            Swal.fire({
+              title: "Google Logged in successfull",
+              showClass: {
+                popup: `
+                  animate__animated
+                  animate__fadeInUp
+                  animate__faster
+                `
+              },
+              hideClass: {
+                popup: `
+                  animate__animated
+                  animate__fadeOutDown
+                  animate__faster
+                `
+              }
+            });
+            navigate("/");
             
         })
         .catch(error => console.error(error));

@@ -1,24 +1,36 @@
 import { useState } from "react";
+import { GrDislike, GrLike } from "react-icons/gr";
+import useAuth from './../../hooks/useAuth';
+import { useNavigate } from "react-router-dom";
 
 
-const Vote = ({ post, onVote }) => {
-    const [voteCount, setVoteCount] = useState(post.votes);
+const Vote = ({ post }) => {
+    const { user } = useAuth();
+    const [upVote, setUpVote] = useState(0);
+    const [downVote, setDownVote] = useState(0);
+    const navigate = useNavigate();
 
-    const handleVote = (type) => {
-        // Simulate an API call to update the vote count on the backend
-        // In a real-world scenario, you would make an API request to your backend
-        // and update the database with the new vote count.
-
-        // For simplicity, we'll just update the frontend state here.
-        if (type === 'upvote') {
-            setVoteCount(voteCount + 1);
-        } else if (type === 'downvote') {
-            setVoteCount(voteCount - 1);
+    const handleUpVote = () => {
+        if (user) {
+            const newVote = upVote + 1;
+            setUpVote(newVote);
+        }
+        else {
+            navigate('/login');
         }
 
-        // Notify the parent component about the vote
-        onVote(post._id, type);
-    };
+    }
+    const handleDownVote = () => {
+        if (user) {
+            const newVote = downVote + 1;
+            setDownVote(newVote);
+        }
+        else {
+            navigate('/login');
+        }
+
+    }
+
     return (
         <div>
             <div className="card w-96 mx-auto bg-base-100 shadow-xl ">
@@ -30,9 +42,9 @@ const Vote = ({ post, onVote }) => {
                     </h2>
                     <p>{post.content}</p>
                     <div className="card-actions justify-end">
-                        <div onClick={() => handleVote('upvote')} className="btn text-base"><GrLike /> Fashion</div>
-                        
-                        <div onClick={() => handleVote('downvote')} className="btn text-base"><GrDislike /> Products</div>
+                        <div onClick={handleUpVote} className="btn text-base"><GrLike /> Like {upVote}</div>
+
+                        <div onClick={handleDownVote} className="btn text-base"><GrDislike /> Dislike {downVote}</div>
                     </div>
                 </div>
             </div>
