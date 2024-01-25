@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import WeeklySchedule from "./WeeklySchedule";
 import './schedule.css'
+import { Helmet } from "react-helmet-async";
 
 
 const Classes = () => {
@@ -36,15 +37,18 @@ const Classes = () => {
 
     return (
         <div>
-            <h2 className="text-4xl text-center py-7">Weekly Schedule and activities</h2>
+            <Helmet>
+                <title>KA Fitness Tracker | Classes</title>
+            </Helmet>
+            <h2 className="text-4xl text-center py-7">Weekly Schedule and Activities</h2>
             <WeeklySchedule schedule={weeklySchedule}></WeeklySchedule>
             <div className="mt-5">
                 <h1 className="text-4xl text-center py-7">All Classes</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                     {
-                        classes.map(silver => <div key={silver._id} className="card w-96 bg-base-100 shadow-xl">
+                        classes.map(silver => <div key={silver._id} className="card bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
-                                <img src={silver.image} alt="Shoes" className="rounded-xl" />
+                                <img src={silver.image} alt="Shoes" className="rounded-xl h-64" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title"> {silver.class_name} </h2>
@@ -58,7 +62,7 @@ const Classes = () => {
                     <button className="btn btn-primary w-full">Join Now</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

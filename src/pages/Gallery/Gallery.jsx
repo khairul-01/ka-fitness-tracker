@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PageTitle from "./PageTiltle/PageTitle";
+import { Helmet } from "react-helmet-async";
 
 
 const Gallery = () => {
@@ -27,11 +28,11 @@ const Gallery = () => {
             setLoading(false);
         }
     };
-    
+
 
     useEffect(() => {
         const handleScroll = () => {
-            
+
             if (
                 window.innerHeight + document.documentElement.scrollTop ===
                 document.documentElement.offsetHeight
@@ -51,17 +52,22 @@ const Gallery = () => {
 
 
     return (
-        <div className=" bg-fixed" style={{backgroundImage: 'url(https://i.ibb.co/Bjvp2xD/7821-jpg-wh1200.jpg)'}}>
-            <PageTitle></PageTitle>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-11">
-                {images.map((image) => (
-                    <div key={image._id} >
-                        <img src={image.image} className="w-[400px] h-[300px]" alt={image.description} />
-                    </div>
-                ))}
-                {loading && <p>Loading...</p>}
+        <div>
+            <Helmet>
+                <title>KA Fitness Tracker | Gallery</title>
+            </Helmet>
+            <div className=" bg-fixed" style={{ backgroundImage: 'url(https://i.ibb.co/Bjvp2xD/7821-jpg-wh1200.jpg)' }}>
+                <PageTitle></PageTitle>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-11">
+                    {images.map((image) => (
+                        <div key={image._id} >
+                            <img src={image.image} className="w-[400px] h-[300px]" alt={image.description} />
+                        </div>
+                    ))}
+                    {loading && <p>Loading...</p>}
+                </div>
+
             </div>
-            
         </div>
     );
 };

@@ -23,6 +23,7 @@ import ProfileSettings from "../pages/Dashboard/MemberHome/ProfileSetting/Profil
 import RecommendedClasses from "../pages/Dashboard/MemberHome/RecommendedClasses/RecommendedClasses";
 import Forum from "../pages/Forum/Forum";
 import TrainerBooked from "../pages/TrainerBooked/TrainerBooked";
+import Payment from "../pages/Payment/Payment";
 
 
 
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
       {
         path: "/trainerBooked",
         element: <TrainerBooked></TrainerBooked>,
+      },
+      {
+        path: '/payment',
+        element: <Payment></Payment>
       },
       {
         path: "/classes",

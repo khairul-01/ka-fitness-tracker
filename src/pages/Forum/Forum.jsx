@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import Vote from "../../components/vote/Vote";
+import { Helmet } from "react-helmet-async";
 
 
 const Forum = () => {
@@ -17,6 +18,9 @@ const Forum = () => {
     
     return (
         <div>
+            <Helmet>
+                <title>KA Fitness Tracker | Forum</title>
+            </Helmet>
             <h1 className="text-5xl text-center py-5">Welcome to Forum Page!</h1>
             <div className="space-y-5">
                 {

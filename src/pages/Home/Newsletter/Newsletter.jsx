@@ -2,16 +2,34 @@ import { IoRocket } from "react-icons/io5";
 
 const Newsletter = () => {
     return (
-        <div className="rounded-lg h-[400px] bg-violet-700 text-white flex flex-col items-center justify-center gap-7">
+        <div className="rounded-lg  bg-violet-700 text-white flex flex-col items-center justify-center p-7 ">
             <h1 className="text-6xl font-bold">Newsletter</h1>
-            <div className="flex w-2/3 justify-center items-center relative">
-                <input type="email" placeholder="Email Address" className="input input-bordered input-success p-7 text-black rounded-full w-full " />
+            
+            <div className="hero">
+                <div className="hero-content">
 
-                <button className="flex btn absolute right-5">
-                    <div className="divider divider-horizontal"></div>
-                    Subscribe
-                    <IoRocket />
-                </button>
+                    <div className="card w-full  shadow-2xl bg-base-100 text-black">
+                        <form className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="text" placeholder="Name" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                
+                            </div>
+                            <div className="form-control mt-6">
+                                <button className="btn btn-primary">Subscribe
+                    <IoRocket /></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );

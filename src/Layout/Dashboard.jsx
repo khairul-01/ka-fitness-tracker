@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { NavLink, Outlet } from "react-router-dom";
 
 
 const Dashboard = () => {
     return (
         <div className="flex w-full">
+            <Helmet>
+                <title>KA Fitness Tracker | Dashboard</title>
+            </Helmet>
 
             {/* Dashboard side bar */}
             <div className="w-1/4 min-h-screen px-3 py-8">

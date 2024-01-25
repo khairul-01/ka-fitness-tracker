@@ -5,6 +5,7 @@ import { FaCheckToSlot } from "react-icons/fa6";
 import { IoRocket, IoShareSocial } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 
 const Trainer = () => {
@@ -18,6 +19,10 @@ const Trainer = () => {
     })
     return (
         <div className="space-y-7">
+            <Helmet>
+                <title>KA Fitness Tracker | Trainer</title>
+            </Helmet>
+
             <h1 className="text-5xl font-bold text-center pt-5">Our Trainers</h1>
 
             {/* Trainer profile section */}

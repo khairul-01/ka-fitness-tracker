@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import useAuth from './../../hooks/useAuth';
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const Registration = () => {
@@ -50,6 +51,9 @@ const Registration = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>KA Fitness Tracker | Register</title>
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left w-1/2 px-5">

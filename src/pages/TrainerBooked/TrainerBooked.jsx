@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import useAxiosSecure from './../../hooks/useAxiosSecure';
+import { Link } from 'react-router-dom';
 
 const TrainerBooked = () => {
     const axiosSecure = useAxiosSecure();
@@ -31,9 +32,9 @@ const TrainerBooked = () => {
                 <TabPanel>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                         {
-                            silverClasses.map(silver => <div key={silver._id} className="card w-96 bg-base-100 shadow-xl">
+                            silverClasses.map(silver => <div key={silver._id} className="card bg-base-100 shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={silver.image} alt="Shoes" className="rounded-xl" />
+                                    <img src={silver.image} alt="Shoes" className="rounded-xl h-80" />
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <h2 className="card-title"> {silver.class_name} </h2>
@@ -44,15 +45,15 @@ const TrainerBooked = () => {
                         }
                     </div>
                     <div className='p-5'>
-                        <button className="btn btn-primary w-full">Join Now</button>
+                        <Link to='/payment'><button className="btn btn-primary w-full">Join Now</button></Link>
                     </div>
                 </TabPanel>
                 <TabPanel>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                         {
-                            goldClasses.map(silver => <div key={silver._id} className="card w-96 bg-base-100 shadow-xl">
+                            goldClasses.map(silver => <div key={silver._id} className="card bg-base-100 shadow-xl ">
                             <figure className="px-10 pt-10">
-                                <img src={silver.image} alt="Shoes" className="rounded-xl" />
+                                <img src={silver.image} alt="Shoes" className="rounded-xl h-80" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title"> {silver.class_name} </h2>
@@ -69,9 +70,9 @@ const TrainerBooked = () => {
                 <TabPanel>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                         {
-                            diamondClasses.map(silver => <div key={silver._id} className="card w-96 bg-base-100 shadow-xl">
+                            diamondClasses.map(silver => <div key={silver._id} className="card bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
-                                <img src={silver.image} alt="Shoes" className="rounded-xl" />
+                                <img src={silver.image} alt="Shoes" className="rounded-xl h-80" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title"> {silver.class_name} </h2>
