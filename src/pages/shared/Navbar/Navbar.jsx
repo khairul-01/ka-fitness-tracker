@@ -32,7 +32,7 @@ const Navbar = () => {
     }
     return (
         <div className="mb-1">
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-lime-300 text-rose-950 font-semibold">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {
                         user ? <>
-                            <button onClick={handleLogout} className="btn">Log Out</button>
+                            <button onClick={handleLogout} className="btn btn-accent">Log Out</button>
                             <div className="avatar online">
                                 <div className="w-10 rounded-full">
                                     <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -67,7 +67,7 @@ const Navbar = () => {
                             </div>
                         </>
                             :
-                            <Link to='/login' className="btn">Login</Link>
+                            <Link to='/login' className="btn btn-accent">Login</Link>
                     }
 
                 </div>

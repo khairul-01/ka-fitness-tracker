@@ -36,7 +36,7 @@ const Newsletter = () => {
             <div className="hero">
                 <div className="hero-content">
 
-                    <div className="card w-full  shadow-2xl bg-base-100 text-black">
+                    <div className="card w-full  shadow-2xl bg-fuchsia-100 text-black">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="form-control">
                                 <label className="label">

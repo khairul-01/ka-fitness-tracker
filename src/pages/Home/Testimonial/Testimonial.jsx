@@ -13,8 +13,8 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 const Testimonial = () => {
 
     return (
-        <div>
-            <h1 className="text-5xl py-5 text-center">What our successfully trainee say.</h1>
+        <div className='bg-violet-100'>
+            <h1 className="text-5xl py-5 bg-primary-content font-bold text-primary text-center">Success Stories</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -35,7 +35,7 @@ const Testimonial = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="hero min-h-screen bg-base-200">
+                    <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>
@@ -46,7 +46,7 @@ const Testimonial = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>
@@ -57,7 +57,7 @@ const Testimonial = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>
@@ -68,7 +68,7 @@ const Testimonial = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>
@@ -79,7 +79,7 @@ const Testimonial = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>
@@ -90,7 +90,7 @@ const Testimonial = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen ">
                         <div className="hero-content text-center">
                             <div className="max-w-md">
                                 <p>⭐️⭐️⭐️⭐️⭐️ (5/5)</p>

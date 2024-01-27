@@ -28,7 +28,7 @@ const BeATrainer = () => {
                 <div className="hero-content ">
 
                     <div className="card w-full shadow-2xl bg-base-100">
-                        <h1 className="text-5xl font-bold py-6 px-6 text-center">Be a Trainer!</h1>
+                        <h1 className="text-5xl font-bold py-6 px-6 text-center bg-primary-content font-bold text-primary">Be a Trainer!</h1>
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="form-control">
                                 <label className="label">

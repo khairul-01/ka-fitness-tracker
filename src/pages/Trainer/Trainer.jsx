@@ -23,10 +23,10 @@ const Trainer = () => {
                 <title>KA Fitness Tracker | Trainer</title>
             </Helmet>
 
-            <h1 className="text-5xl font-bold text-center pt-5">Our Trainers</h1>
+            <h1 className="text-5xl font-bold text-center py-5 bg-primary-content text-primary">Our Trainers</h1>
 
             {/* Trainer profile section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-fuchsia-200">
                 {
                     trainers.map(trainer => <div key={trainer._id} className="card bg-base-100 shadow-xl">
 

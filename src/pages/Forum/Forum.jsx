@@ -21,7 +21,7 @@ const Forum = () => {
             <Helmet>
                 <title>KA Fitness Tracker | Forum</title>
             </Helmet>
-            <h1 className="text-5xl text-center py-5">Welcome to Forum Page!</h1>
+            <h1 className="text-5xl text-center py-5 bg-primary-content font-bold text-primary">Welcome to Forum Page!</h1>
             <div className="space-y-5">
                 {
                     posts.map(post => <Vote key={post._id} post={post}></Vote>)

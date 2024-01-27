@@ -3,7 +3,7 @@ import fitnessLogo from '../../../assets/images/fitness-tracker-logo.png'
 const Footer = () => {
     return (
         <div className="mt-9">
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer text-amber-950 p-10 bg-gradient-to-r from-green-400 to-blue-500 text-base-content">
                 <aside>
                     <img className='w-[80px] h-[80px]' src={fitnessLogo} alt="" />
                     <p>KA Fitness Tracker Ltd.<br />Providing reliable tech since 1992</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </nav>
             </footer>
-            <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+            <footer className="footer footer-center text-pink-800 p-4 bg-base-300 text-base-content bg-gradient-to-r from-cyan-500 to-blue-500">
                 <aside>
                     <p>Copyright © 2024 - All right reserved by KA Fitness Tracker Ltd</p>
                 </aside>

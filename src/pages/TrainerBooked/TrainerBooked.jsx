@@ -20,7 +20,7 @@ const TrainerBooked = () => {
 
     return (
         <div>
-            <h1 className="text-5xl text-center py-3">Trainer Booked Page</h1>
+            <h1 className="text-5xl text-center py-3 bg-primary-content font-bold text-primary mb-5">Trainer Booked Page</h1>
 
             <Tabs>
                 <TabList >

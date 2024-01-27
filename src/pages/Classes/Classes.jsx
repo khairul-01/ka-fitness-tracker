@@ -40,11 +40,11 @@ const Classes = () => {
             <Helmet>
                 <title>KA Fitness Tracker | Classes</title>
             </Helmet>
-            <h2 className="text-4xl text-center py-7">Weekly Schedule and Activities</h2>
+            <h2 className="text-4xl text-center py-7 bg-primary-content font-bold text-primary">Weekly Schedule and Activities</h2>
             <WeeklySchedule schedule={weeklySchedule}></WeeklySchedule>
             <div className="mt-5">
-                <h1 className="text-4xl text-center py-7">All Classes</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+                <h1 className="text-4xl text-center py-7 bg-primary-content font-bold text-primary">All Classes</h1>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 bg-fuchsia-200'>
                     {
                         classes.map(silver => <div key={silver._id} className="card bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">

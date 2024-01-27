@@ -3,8 +3,8 @@
 const Featured = () => {
     return (
         <div>
-            <h1 className="text-5xl text-center py-6">Our Features</h1>
-            <div className="grid grid-cols-3 gap-4">
+            <h1 className="text-5xl text-center py-6 bg-primary-content font-bold text-primary">Our Features</h1>
+            <div className="grid grid-cols-3 gap-4 bg-fuchsia-200">
                 <div className="card bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
                         <img src="https://i.ibb.co/89nwzx4/images.jpg" alt="Shoes" className="rounded-xl" />

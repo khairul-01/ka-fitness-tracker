@@ -4,8 +4,8 @@ import { FaRegUserCircle } from "react-icons/fa";
 const Blog = () => {
     return (
         <div>
-            <h1 className="text-5xl text-center py-5">Articles</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <h1 className="text-5xl text-center py-5 bg-primary-content font-bold text-primary">Articles</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 bg-fuchsia-200">
                 <div className="card bg-base-100 shadow-xl">
 
                     <figure><img className="h-[250px]" src="https://i.ibb.co/fG95VMh/Mindful-Moments.png" alt="Shoes" /></figure>
