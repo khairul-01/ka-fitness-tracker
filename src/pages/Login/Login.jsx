@@ -10,7 +10,7 @@ const Login = () => {
     const {logIn} = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
-    const fromWhere = location.state?.from?.pathname || '/';
+    const from = location.state?.from?.pathname || '/';
     console.log('State in the location page ', location.state);
     const {
         register,
@@ -39,7 +39,7 @@ const Login = () => {
                   `
                 }
               });
-              navigate(fromWhere, {replace: true});
+              navigate(from, {replace: true});
         })
     }
     return (

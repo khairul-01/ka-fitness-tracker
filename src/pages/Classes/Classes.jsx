@@ -19,7 +19,7 @@ const Classes = () => {
         "Monday": [
             { time: "10:00 AM", activity: "Cardio Blast" },
             { time: "2:00 PM", activity: "Strength Fusion" },
-            { time: "2:00 PM", activity: "Strength Fusion" },
+            { time: "4:00 PM", activity: "Strength Fusion" },
             // Add more activities as needed
         ],
         "Tuesday": [
@@ -31,6 +31,18 @@ const Classes = () => {
             // Tuesday activities
             { time: "10:00 AM", activity: "Cardio Blast" },
             { time: "2:00 PM", activity: "Strength Fusion" },
+        ],
+        "Thursday": [
+            // Tuesday activities
+            { time: "10:00 AM", activity: "Cardio Blast" },
+            { time: "2:00 PM", activity: "Strength Fusion" },
+            { time: "4:00 PM", activity: "Strength Fusion" },
+        ],
+        "Sunday": [
+            // Tuesday activities
+            { time: "10:00 AM", activity: "Cardio Blast" },
+            { time: "2:00 PM", activity: "Strength Fusion" },
+            { time: "4:00 PM", activity: "Strength Fusion" },
         ],
         // Repeat for other days of the week
     };

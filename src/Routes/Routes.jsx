@@ -24,6 +24,9 @@ import RecommendedClasses from "../pages/Dashboard/MemberHome/RecommendedClasses
 import Forum from "../pages/Forum/Forum";
 import TrainerBooked from "../pages/TrainerBooked/TrainerBooked";
 import Payment from "../pages/Payment/Payment";
+import ExploreBlog from "../pages/Home/Blog/ExploreBlog";
+import PrivateRoutes from "./PrivateRoutes";
+import AllSubscriber from "../pages/Dashboard/AdminHome/AllSubscriber/AllSubscriber";
 
 
 
@@ -42,6 +45,11 @@ export const router = createBrowserRouter([
         element: <Gallery></Gallery>,
       },
       {
+        path: "/exploreBlogs/:id",
+        element: <ExploreBlog></ExploreBlog>,
+        loader: ({params}) => fetch(`http://localhost:5000/blogs/${params.id}`)
+      },
+      {
         path: "/trainer",
         element: <Trainer></Trainer>,
       },
@@ -52,15 +60,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "/beAtrainer",
-        element: <BeATrainer></BeATrainer>,
+        element: <PrivateRoutes><BeATrainer></BeATrainer></PrivateRoutes>,
       },
       {
         path: "/trainerBooked",
-        element: <TrainerBooked></TrainerBooked>,
+        element: <PrivateRoutes><TrainerBooked></TrainerBooked></PrivateRoutes>,
       },
       {
         path: '/payment',
-        element: <Payment></Payment>
+        element: <PrivateRoutes><Payment></Payment></PrivateRoutes>
       },
       {
         path: "/classes",
@@ -93,6 +101,10 @@ export const router = createBrowserRouter([
       {
         path: 'adminHome',
         element: <AdminHome></AdminHome>
+      },
+      {
+        path: 'allSubscribers',
+        element: <AllSubscriber></AllSubscriber>
       },
       {
         path: 'allTrainers',

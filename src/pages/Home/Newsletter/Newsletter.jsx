@@ -1,6 +1,7 @@
 import { IoRocket } from "react-icons/io5";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Newsletter = () => {
     const axiosPublic = useAxiosPublic();
@@ -12,21 +13,21 @@ const Newsletter = () => {
     } = useForm();
     const onSubmit = data => {
         console.log(data);
-        // axiosPublic.post('/users', userInfo)
-        //     .then(res => {
-        //         if (res.data.insertedId) {
-        //             console.log("User added to the database");
-        //             // reset();
-        //             Swal.fire({
-        //                 position: "top-end",
-        //                 icon: "success",
-        //                 title: "User created and added to server successfully",
-        //                 showConfirmButton: false,
-        //                 timer: 1500
-        //             });
+        axiosPublic.post('/subscriber', data)
+            .then(res => {
+                if (res.data.insertedId) {
+                    console.log("subscriber added to the database");
+                    // reset();
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `${data.name} subscribed successfully`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
 
-        //         }
-        //     })
+                }
+            })
 
     }
     return (

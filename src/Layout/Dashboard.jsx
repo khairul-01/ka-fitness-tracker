@@ -13,6 +13,7 @@ const Dashboard = () => {
             <div className="w-1/4 min-h-screen px-3 py-8">
                 <ul className="menu menu-vertical py-1">
                     <li><NavLink to="/dashboard/adminHome">Admin Home</NavLink></li>
+                    <li><NavLink to="/dashboard/allSubscribers">All Subscribers</NavLink></li>
                     <li><NavLink to="/dashboard/allTrainers">All Trainers</NavLink></li>
                     <li><NavLink to="/dashboard/appliedTrainer">Applied Trainers</NavLink></li>
                     <li><NavLink to="/dashboard/balance">Balance</NavLink></li>
