@@ -25,8 +25,8 @@ import Forum from "../pages/Forum/Forum";
 import TrainerBooked from "../pages/TrainerBooked/TrainerBooked";
 import Payment from "../pages/Payment/Payment";
 import ExploreBlog from "../pages/Home/Blog/ExploreBlog";
-import PrivateRoutes from "./PrivateRoutes";
 import AllSubscriber from "../pages/Dashboard/AdminHome/AllSubscriber/AllSubscriber";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -60,15 +60,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "/beAtrainer",
-        element: <PrivateRoutes><BeATrainer></BeATrainer></PrivateRoutes>,
+        element: <PrivateRoute><BeATrainer></BeATrainer></PrivateRoute>,
       },
       {
         path: "/trainerBooked",
-        element: <PrivateRoutes><TrainerBooked></TrainerBooked></PrivateRoutes>,
+        element: <PrivateRoute><TrainerBooked></TrainerBooked></PrivateRoute>,
       },
       {
         path: '/payment',
-        element: <PrivateRoutes><Payment></Payment></PrivateRoutes>
+        element: <PrivateRoute><Payment></Payment></PrivateRoute>
       },
       {
         path: "/classes",
@@ -94,8 +94,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <Dashboard></Dashboard>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children: [
       // Admin routes
       {

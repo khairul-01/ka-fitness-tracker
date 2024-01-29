@@ -57,6 +57,7 @@ const AuthProvider = ({children}) => {
                         console.log("set loading false");
                     }
                 })
+                setLoading(false);
             }
             else{
                 console.log("User signed out");
@@ -66,7 +67,7 @@ const AuthProvider = ({children}) => {
                 console.log("Else set loading false");
             }
         })
-        setLoading(false);
+        // setLoading(false);
         return () => {
             return unSubscribe();
         }

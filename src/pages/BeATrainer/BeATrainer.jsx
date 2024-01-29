@@ -11,7 +11,7 @@ const BeATrainer = () => {
     const { user } = useAuth();
     const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
-    
+
     const {
         register,
         handleSubmit,
@@ -23,39 +23,40 @@ const BeATrainer = () => {
         console.log(data.image);
         // image upload to imgbb and then get an url
         const imageFile = { image: data.image[0] }
-        const res = await axiosPublic.post(image_hosting_api, imageFile, {
-            headers: {
-                'content-type': 'multipart/form-data'
-            }
-        });
 
-        if (res.data.success) {
-            // now send the menu item data to the server with the image
-            const trainerInfo = {
-                name: data.name,
-                email: data.email,
-                age: parseFloat(data.age),
-                image: res.data.data.display_url,
-                skills: data.skills,
-                timeInWeek: parseFloat(data.timeInWeek),
-                timeInDay: parseFloat(data.timeInDay),           
-            }
-            // 
-            const trainerRes = await axiosSecure.post('/appliedTrainers', trainerInfo)
-            console.log(trainerRes.data);
-            if (trainerRes.data.insertedId) {
-                // show success popup
-                reset();
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: `${data.name} is inserted to the menu`,
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            }
+        // const res = await axiosPublic.post(image_hosting_api, imageFile, {
+        //     headers: {
+        //         'content-type': 'multipart/form-data'
+        //     }
+        // });
+        // console.log(res.data);
+
+        // now send the menu item data to the server with the image
+        const trainerInfo = {
+            name: data.name,
+            email: data.email,
+            age: parseFloat(data.age),
+            image: data.image,
+            skills: data.skills,
+            timeInWeek: parseFloat(data.timeInWeek),
+            timeInDay: parseFloat(data.timeInDay),
         }
-        console.log('with image url', res.data);
+        // 
+        const trainerRes = await axiosSecure.post('/appliedTrainers', trainerInfo)
+        console.log(trainerRes.data);
+        if (trainerRes.data.insertedId) {
+            // show success popup
+            reset();
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `${data.name} is inserted to the menu`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+        // console.log('with image url', res.data);
     }
 
     const skillsList = [
@@ -97,7 +98,7 @@ const BeATrainer = () => {
                                 <label className="label">
                                     <span className="label-text">Profile Image</span>
                                 </label>
-                                <input type="text" {...register("image", { required: true })} placeholder="Image url" className="input input-bordered" required />
+                                <input type="text" name="image" {...register("image", { required: true })} placeholder="Image url" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
